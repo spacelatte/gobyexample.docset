@@ -1,0 +1,3 @@
+./Contents/Resources/*.dsidx
+./Contents/*.sql
+./Contents/*.sh
