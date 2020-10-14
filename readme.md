@@ -31,17 +31,17 @@ and `.docset` extension, Dash will be handling it if installed properly.
 I did not want to clutter up the repository by including SQLite3 indexes. Also,
 they might change in the future in the upstream repository.
 
-The upstream repository added as a submodule, in order to update it,
-you can execute `make -C Contents update`.
+The upstream repository added as a submodule, to update it, you can execute
+`make -C Contents update`.
 
 - Use `make -C Contents clean` to remove index.
 - Use `make -C Contents index` to create index.
 
-> Note: index re-creation needed after updating the submodule.
+> Note: index re-creation is needed after updating the submodule.
 
 ## How index getting created
 
-Upstream repository already includes prebuild HTML files inside the `public`
+The upstream repository already includes prebuild HTML files inside the `public`
 directory in its root.
 
 There is a file called
