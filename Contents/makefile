@@ -2,7 +2,10 @@
 
 INDEX := ./Resources/docSet.dsidx
 
-all: $(INDEX)
+index: $(INDEX)
+
+update:
+	git submodule foreach --recursive git pull
 
 clean:
 	rm -vf "$(INDEX)"
