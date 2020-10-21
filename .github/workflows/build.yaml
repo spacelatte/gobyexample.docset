@@ -21,6 +21,8 @@ jobs:
         run:  sudo apt update
       - name: Install packages
         run:  sudo apt install -y git make sqlite3
+      - name: Fetch submodules manually
+        run:  git submodule update --init --recursive || true
       - name: Build with make
         run:  make -C Contents
       - name: Upload built directory
