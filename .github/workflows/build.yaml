@@ -18,9 +18,9 @@ jobs:
         with:
           submodules: recursively
       - name: Update package index
-        run:  apt update
+        run:  sudo apt update
       - name: Install packages
-        run:  apt install -y git make sqlite3
+        run:  sudo apt install -y git make sqlite3
       - name: Build with make
         run:  make -C Contents
       - name: Upload built directory
