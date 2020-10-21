@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          submodules: recursively
+          submodules: true
       - name: Update package index
         run:  sudo apt update
       - name: Install packages
